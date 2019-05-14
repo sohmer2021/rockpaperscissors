@@ -14,36 +14,57 @@ public class Main {
         int compInput;
         System.out.println("Pick 0 (Rock), 1 (Paper), or 2 (Scissors)");
         input = keyboard.nextInt();
+        int userScore;
+        int compScore;
         {
 
         }
         if (input == 0) ;
         System.out.println("Rock");
 
-        {if (input == 1) ;
+        {
+            if (input == 1) ;
             System.out.println("Paper");
 
-            { if (input == 2) ;
+            {
+                if (input == 2) ;
                 System.out.println("Scissors");
 
-                {
-                    if (compInput == 1)
+            }
+            if (compInput == 1 && input == 0) ;
 
-                    System.out.println("You chose rock, computer chose paper");
-            System.out.println("You win");
+            System.out.println("You chose rock, computer chose paper ");
+            System.out.println("You lose");
+
 
         }
-        {
-            if (compInput == 2);
+         if (compInput == 2 && input == 0) ;
+        System.out.println("You chose rock, computer chose scissors");
+        System.out.println("You win");
 
-            System.out.println("You chose rock, computer chose scissors");
+
+        {
+            if (compInput == 2 && input == 1);
+
+            System.out.println("You chose paper, computer chose scissors");
+            System.out.println("You lose");
+
+
+            {  if (compInput == 0 && input == 1);
+
+            System.out.println("You chose paper, computer chose rock");
             System.out.println("You win");
 
             {
-                if (compInput == 3);
+                if (compInput == 1 && input == 2);
 
-                System.out.println("You chose paper, computer chose rock");
+                System.out.println("You chose scissors, computer chose paper");
                 System.out.println("You win");
+
+                {  if (compInput == 0 && input == 2);
+
+                System.out.println("You chose scissors, computer chose rock");
+                System.out.println("You lose");
 
 
 }}}}}}
