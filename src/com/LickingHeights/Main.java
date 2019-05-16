@@ -5,84 +5,84 @@ public class Main {
 
     public static void main(String[] args) {
         Random random = new Random();
-        int compPick = (int)(Math.random()*100);
+        int compInput = random.nextInt(3 - 1 + 1) + 1;
+        System.out.println(compInput);
         Scanner keyboard = new Scanner(System.in);
         String name;
         System.out.println("What is your name?");
         name = keyboard.nextLine();
         System.out.println(name);
         int input;
-        int compInput;
-        System.out.println("Pick 0 (Rock), 1 (Paper), or 2 (Scissors)");
+        System.out.println("Pick 1 (Rock), 2 (Paper), or 3 (Scissors)");
         input = keyboard.nextInt();
         int userScore;
         int compScore;
         boolean loop = true;
-        while (loop){
+        while (loop) {
+
+        } if (compInput  == 1){
+            System.out.println("Rock");
+
+        }
+        if (compInput == 2) {
+            System.out.println("Paper");
+
+        } else if (compInput == 3) {
+            System.out.println("Scissors");
+
+        } else if (compInput == 2 && input == 1) {
 
 
 
 
-        if (input == 0) ;
-        System.out.println("Rock");
+            if (input  == 1);
+            System.out.println("Rock");
 
-            {
-                if (input == 1) ;
-                System.out.println("Paper");
+        }
+        if (input == 2) {
+            System.out.println("Paper");
 
-                {
-                    else if (input == 2) ;
-                    System.out.println("Scissors");
+        } else if (input == 3) {
+            System.out.println("Scissors");
 
-                } else if (compInput == 1 && input == 0) ;
+        } else if (compInput == 2 && input == 1) {
 
-                    System.out.println("You chose rock, computer chose paper ");
-                    System.out.println("You lose");
-                    compScore = compScore +1;
-                    break;
+            System.out.println("You chose rock, computer chose paper ");
+            System.out.println("You lose");
 
 
-                }
-                else if (compInput == 2 && input == 0) ;
+
+            } else if (compInput == 3 && input == 1) {
                 System.out.println("You chose rock, computer chose scissors");
                 System.out.println("You win");
-                userScore = userScore +1;
-                break;
-            }
-                else if (compInput == 2 && input == 1);
-
-            System.out.println("You chose paper, computer chose scissors");
-            System.out.println("You lose");
-            compScore = compScore +1;
-            break;
 
 
-            {   else if (compInput == 0 && input == 1);
+                } else if (compInput == 3 && input == 2) {
 
-            System.out.println("You chose paper, computer chose rock");
-            System.out.println("You win");
-            userScore = userScore +1;
-            break;
-
-            {
-                 else if (compInput == 1 && input == 2);
-
-                System.out.println("You chose scissors, computer chose paper");
-                System.out.println("You win");
-                userScore = userScore +1;
-                break;
-
-                {   else if (compInput == 0 && input == 2);
-
-                System.out.println("You chose scissors, computer chose rock");
-                System.out.println("You lose");
-                compScore = compScore +1;
-                break;
-
-
-}}}}}
+                    System.out.println("You chose paper, computer chose scissors");
+                    System.out.println("You lose");
 
 
 
+                    }   else if (compInput == 1 && input == 2) {
 
 
+                        System.out.println("You chose paper, computer chose rock");
+                        System.out.println("You win");
+
+
+
+                        } else if (compInput == 2 && input == 3) {
+
+                            System.out.println("You chose scissors, computer chose paper");
+                            System.out.println("You win");
+
+
+
+                        } else if (compInput == 1 && input == 3) {
+
+                            System.out.println("You chose scissors, computer chose rock");
+                            System.out.println("You lose");
+
+
+                            }}}
