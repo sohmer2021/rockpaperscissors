@@ -31,50 +31,56 @@ public class Main {
                 System.out.println("Paper");
 
                 {
-                    if (input == 2) ;
+                    else if (input == 2) ;
                     System.out.println("Scissors");
 
-                    if (compInput == 1 && input == 0) ;
+                } else if (compInput == 1 && input == 0) ;
 
                     System.out.println("You chose rock, computer chose paper ");
                     System.out.println("You lose");
+                    compScore = compScore +1;
                     break;
 
 
                 }
-                if (compInput == 2 && input == 0) ;
+                else if (compInput == 2 && input == 0) ;
                 System.out.println("You chose rock, computer chose scissors");
                 System.out.println("You win");
+                userScore = userScore +1;
                 break;
             }
-                if (compInput == 2 && input == 1);
+                else if (compInput == 2 && input == 1);
 
             System.out.println("You chose paper, computer chose scissors");
             System.out.println("You lose");
+            compScore = compScore +1;
             break;
 
 
-            {   if (compInput == 0 && input == 1);
+            {   else if (compInput == 0 && input == 1);
 
             System.out.println("You chose paper, computer chose rock");
             System.out.println("You win");
+            userScore = userScore +1;
             break;
 
             {
-                 if (compInput == 1 && input == 2);
+                 else if (compInput == 1 && input == 2);
 
                 System.out.println("You chose scissors, computer chose paper");
                 System.out.println("You win");
+                userScore = userScore +1;
                 break;
 
-                {   if (compInput == 0 && input == 2);
+                {   else if (compInput == 0 && input == 2);
 
                 System.out.println("You chose scissors, computer chose rock");
                 System.out.println("You lose");
+                compScore = compScore +1;
                 break;
 
 
-}}}}}}
+}}}}}
 
 
 
