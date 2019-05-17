@@ -5,7 +5,10 @@ public class Main {
 
     public static void main(String[] args) {
         Random random = new Random();
-        int compInput = random.nextInt(3 - 1 + 1) + 1;
+        int rock = 1;
+        int paper = 2;
+        int scissors = 3;
+        int compInput = random.nextInt( 3 - 1 + 1) + 1;
         System.out.println(compInput);
         Scanner keyboard = new Scanner(System.in);
         String name;
@@ -15,10 +18,11 @@ public class Main {
         int input;
         System.out.println("Pick 1 (Rock), 2 (Paper), or 3 (Scissors)");
         input = keyboard.nextInt();
-        int userScore;
-        int compScore;
         boolean loop = true;
         while (loop) {
+        int userScore;
+        int compScore;
+
 
         } if (compInput  == 1){
             System.out.println("Rock");
@@ -39,7 +43,7 @@ public class Main {
             System.out.println("Rock");
 
         }
-        if (input == 2) {
+        else if (input == 2) {
             System.out.println("Paper");
 
         } else if (input == 3) {
@@ -49,7 +53,6 @@ public class Main {
 
             System.out.println("You chose rock, computer chose paper ");
             System.out.println("You lose");
-
 
 
             } else if (compInput == 3 && input == 1) {
@@ -81,8 +84,25 @@ public class Main {
 
                         } else if (compInput == 1 && input == 3) {
 
-                            System.out.println("You chose scissors, computer chose rock");
-                            System.out.println("You lose");
+            System.out.println("You chose scissors, computer chose rock");
+            System.out.println("You lose");
+
+        } else if (compInput == 1 && input == 1) {
+
+            System.out.println("You chose rock, computer chose rock");
+            System.out.println("Draw!");
+
+        } else if (compInput == 2 && input == 2) {
+
+            System.out.println("You chose paper, computer chose paper");
+            System.out.println("Draw!");
+
+        } else if (compInput == 3 && input == 3){
+
+            System.out.println("You chose scissors, computer chose scissors");
+            System.out.println("Draw!");
+
+
 
 
                             }}}
