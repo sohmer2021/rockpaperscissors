@@ -5,11 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
         Random random = new Random();
-        int rock = 1;
-        int paper = 2;
-        int scissors = 3;
-        int compInput = random.nextInt( 3 - 1 + 1) + 1;
-        System.out.println(compInput);
+        int compInput = random.nextInt(3 - 1 + 1) + 1;
+        /*System.out.println(compInput);*/
         Scanner keyboard = new Scanner(System.in);
         String name;
         System.out.println("What is your name?");
@@ -18,26 +15,19 @@ public class Main {
         int input;
         System.out.println("Pick 1 (Rock), 2 (Paper), or 3 (Scissors)");
         input = keyboard.nextInt();
-        boolean loop = true;
-        while (loop) {
-        int userScore;
-        int compScore;
+        int userScore = 0;
+        int compScore = 0;
+        {
 
 
-        } if (compInput  == 1){
+    }if (compInput  == 1){
             System.out.println("Rock");
-
         }
-        if (compInput == 2) {
+        else if (compInput == 2) {
             System.out.println("Paper");
 
         } else if (compInput == 3) {
             System.out.println("Scissors");
-
-        } else if (compInput == 2 && input == 1) {
-
-
-
 
             if (input  == 1);
             System.out.println("Rock");
@@ -49,7 +39,8 @@ public class Main {
         } else if (input == 3) {
             System.out.println("Scissors");
 
-        } else if (compInput == 2 && input == 1) {
+
+        } if (compInput == 2 && input == 1) {
 
             System.out.println("You chose rock, computer chose paper ");
             System.out.println("You lose");
@@ -74,7 +65,6 @@ public class Main {
                         System.out.println("You win");
 
 
-
                         } else if (compInput == 2 && input == 3) {
 
                             System.out.println("You chose scissors, computer chose paper");
@@ -86,6 +76,7 @@ public class Main {
 
             System.out.println("You chose scissors, computer chose rock");
             System.out.println("You lose");
+
 
         } else if (compInput == 1 && input == 1) {
 
@@ -105,4 +96,5 @@ public class Main {
 
 
 
-                            }}}
+
+        }}}
