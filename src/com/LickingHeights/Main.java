@@ -87,6 +87,7 @@ public class Main {
 
                 System.out.println("You chose scissors, computer chose rock");
                 System.out.println("You lose");
+                System.out.println("Computer plus one");
                 userScore++;
 
 
